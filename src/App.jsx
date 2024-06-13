@@ -3,6 +3,8 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import PathfindingView from './components/PathfindingVisualizer/PathfindingView';
 import SortingView from './components/SortingVisualizer/SortingView';
+import sortingImage from './images/sorting.png';
+import pathfindingImage from './images/pathfinding.png';
 
 function App() {
   return (
@@ -25,14 +27,14 @@ const Home = () => (
       <Link to="/sorting-visualizer" className="card-link">
         <div className="card">
           <h2>Sorting Visualizer</h2>
-          <img src="/images/sorting.png" alt="Sorting Visualizer" className="card-image"/>
+          <img src={sortingImage} alt="Sorting Visualizer" className="card-image"/>
           <p>Explore sorting algorithms visually.</p>
         </div>
       </Link>
       <Link to="/pathfinding-visualizer" className="card-link">
         <div className="card">
           <h2>Pathfinding Visualizer</h2>
-          <img src="/images/pathfinding.png" alt="Pathfinding Visualizer" className="card-image"/>
+          <img src={pathfindingImage} alt="Pathfinding Visualizer" className="card-image"/>
           <p>Visualize pathfinding algorithms.</p>
         </div>
       </Link>
