@@ -1,0 +1,200 @@
+nav {
+    width: 100%;
+    height: min(7vh, 100px);
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 230, 118, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space-between for hamburger menu */
+    padding: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    position: fixed;  /* Ensures the navbar is fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensures the navbar is above other content */
+}
+
+nav .nav-brand {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+/* General Navbar Styling */
+.navbar {
+    width: 100%;
+    height: min(7vh, 100px);
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 230, 118, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space-between for hamburger menu */
+    padding: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: fixed;  /* Ensures the navbar is fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensures the navbar is above other content */
+}
+
+.navbar .nav-brand {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.navbar .toolbox {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar .toolbox label {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.navbar .toolbox > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar .toolbox button {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjusted transparency */
+    border-radius: 5px;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 20px;
+    outline: none;
+    padding: 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .toolbox button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fully opaque on hover */
+}
+
+.navbar .toolbox select {
+    background:  rgba(0, 0, 0, 0.5);  /* Adjusted transparency */
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .toolbox select:hover {
+    background:  rgba(0, 0, 0, 0.7); /* Fully opaque on hover */
+}
+
+.navbar .toolbox input[type='range'] {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.navbar .toolbox input,
+.navbar select,
+.navbar button {
+    min-width: 130px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .toolbox {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .toolbox > div {
+        margin: 10px 0;
+    }
+
+    .navbar .speed {
+        display: none;
+    }
+}
+
+.toolbox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbox label {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.toolbox > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbox button {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 20px;
+  outline: none;
+  padding: 7px 7px;
+}
+
+.toolbox select,
+input[type='range'] {
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.toolbox input,
+select,
+button {
+  min-width: 130px;
+}
+
+.toolbox select {
+  background: rgba(0, 0, 0, 0.5); ;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 8px 8px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .toolbox {
+    display: block;
+    text-align: center;
+  }
+
+  .toolbox > div {
+    margin: 10px 0;
+  }
+
+  .speed {
+    display: none;
+  }
+}

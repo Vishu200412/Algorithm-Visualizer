@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgb(4, 20, 122) 0%, rgb(7, 226, 255) 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  text-align: center;
+  padding: 50px;
+  max-width: 1000px; /* Adjusted width to fit more content side by side */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.homepage h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: rgb(16, 15, 15);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 300px; /* Adjusted width to fit side by side */
+  text-align: center; /* Centered text */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0; /* Added margin to separate the image from text */
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
